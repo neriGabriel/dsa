@@ -23,17 +23,6 @@ output: 2 (3, 4) ou (4, 3)
 nums = [3, 4, 5, 6, 7, 3, 4, 2]
 target = 10
 output: 2
-
-
-
-(3, 4, 5)
-(4, 5, 6)
-(5, 6)
-(5, 6, 7)
-(6, 7)
-(6, 7, 3)
-(7, 3)
-(7, 3, 4)
  */
 public class ContinuousSubArray {
 
@@ -71,13 +60,12 @@ public class ContinuousSubArray {
         int sum = 0;
         int start = 0;
         
-        for(int i = 0; i < mNums.length; i++) { // Iterate all over the index
-            sum += mNums[i];    // Add current index to the current sum
-            while(sum >= mTarget) { // While the current sum >= target
-                System.out.println("iteracao: a");
-                smallestLength = Math.min(smallestLength, i - start + 1); // Calculates the min length
-                sum -= mNums[start];    // Decrements from the sum;
-                start++;    // increments the start pos;
+        for(int i = 0; i < mNums.length; i++) { 
+            sum += mNums[i]; 
+            while(sum >= mTarget) { 
+                smallestLength = Math.min(smallestLength, i - start + 1); 
+                sum -= mNums[start];
+                start++;
             }
         }
 

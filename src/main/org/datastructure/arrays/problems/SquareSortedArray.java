@@ -45,6 +45,16 @@ import java.security.InvalidParameterException;
  */
 public class SquareSortedArray {
 
+    /**
+     * Square and order an input array
+     * 
+     * @param nums
+     * @return int[] represeting the squared values ordered in non-decreasing.
+     * 
+     * Asymptomatic analysis:
+     * Time: O(N);
+     * Space: O(N);
+     */
     public int[] squareSortedArray(int[] nums) {
         if(nums == null) throw new InvalidParameterException();
         int[] output = new int[nums.length];

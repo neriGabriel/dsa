@@ -39,9 +39,18 @@ import java.util.Set;
  * 1. What is the minimum and maximum size of the input array?
  * 2. Does the input array supports negative values?
  * 3. The input array is whether out of order or ordered?
- * 4. 
  */
 public class ContainsDuplicate {
+
+    /**
+     * Check whether or not the input parameter has duplicated values.
+     * @param nums
+     * @return [boolean] indicating if there are duplicated values.
+     * 
+     * Asymptomatic analysis:
+     * Time: O(N);
+     * Space: O(N);
+     */
     public boolean hasDuplicate(int[] nums) {
         if (nums == null || nums.length == 0 || nums.length == 1) {
             return false;

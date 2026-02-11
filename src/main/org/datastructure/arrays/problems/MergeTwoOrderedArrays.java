@@ -4,7 +4,18 @@ import java.security.InvalidParameterException;
 
 public class MergeTwoOrderedArrays {
 
-    public int[] merge(int[] first, int[] second) { //Complexity: time O(N + M), space O(N + M)
+    /**
+     * Merge two ordered arrays.
+     * 
+     * @param first
+     * @param second
+     * @return int[] with the two input arrays merged into one.
+     * 
+     * Asymptomatic analysis:
+     * Time: O(N + M);
+     * Space: O(N + M);
+     */
+    public int[] merge(int[] first, int[] second) {
         if (first == null && second == null) {
             throw new InvalidParameterException();
         }

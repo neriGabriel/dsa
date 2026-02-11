@@ -1,6 +1,14 @@
 package main.org.datastructure.arrays.problems;
 
 public class ReverseChar {
+    /**
+     * Reverse an input array of chars.
+     * @param s
+     * 
+     * Asymptomatic analysis:
+     * Time: O(N);
+     * Space: O(1);
+     */
     public void reverseString(char[] s) {
         if(s == null || s.length <= 0) return;
         
