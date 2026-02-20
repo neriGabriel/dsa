@@ -61,7 +61,6 @@ public class ContainsDuplicate {
             if (inputOcurrenceTracking.contains(num)) {
                 return true;
             }
-
             inputOcurrenceTracking.add(num);
         }
 
